@@ -1,0 +1,20 @@
+// Name: Minh To
+// Seneca Student ID: 125526186
+// Seneca email: qto@myseneca.ca
+// Date of completion: 17 Sep 19
+//
+// I confirm that the content of this file is created by me,
+//   with the exception of the parts provided to me by my professor.
+
+In this workshop, I learned how to work with more string objects, move constructor, move assignment operator, nested anonymous structures and a (headache inducing) review on file IO.
+
+I learned that with file reading, when you loop through a file and use the getline function, the file pointer will move through the file until it hits EOF. After this, the file insertion object's bit will switch to the EOFbit. 
+
+In order to read the file again, you have to move the file pointer back to the beginning again. ex.  fin.seekg(std::ios::beg);
+
+--the reason for the significant time difference between the copy and move operations
+Copy operations are expensive if you're working with objects with resources. This is because you have to deallocate and allocate memory, and then manually copy values from one object to another. This is the cost of keeping your source object after it has been copied to your target object. 
+
+If you need to re-use your source object after a copy operator, then this would be the method you would have to use.
+
+Move operators are faster and cheaper because they move the addresses of the source object's data members so that the target object now references those data members. There is no creation or copying of values. 

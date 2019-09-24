@@ -1,3 +1,11 @@
+// Name: Minh To
+// Seneca Student ID: 125526186
+// Seneca email: qto@myseneca.ca
+// Date of completion: 17 Sep 19
+//
+// I confirm that the content of this file is created by me,
+//   with the exception of the parts provided to me by my professor.
+
 // Workshop 2 - Copy and Move Semantics
 // w2.cpp
 // 2019/01/10 - Chris Szalwinski
@@ -9,6 +17,7 @@
 #include "Text.h"
 #include "TimedEvents.h"
 using namespace sdds;
+
 
 int main(int argc, char** argv)
 {
