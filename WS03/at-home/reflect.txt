@@ -1,0 +1,37 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red27\green31\blue35;
+\red88\green137\blue66;\red204\green204\blue202;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c99971\c0;\cssrgb\c14296\c16275\c18129;
+\cssrgb\c41300\c59690\c32574;\cssrgb\c83681\c83679\c83054;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl360\partightenfactor0
+\ls1\ilvl0
+\f0\fs24 \cf2 \cb3 {\listtext	\uc0\u8226 	}\cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 the reason for specializing the\'a0\cf2 \cb3 \strokec4 sum()\cf2 \cb3 \strokec4 \'a0member function.\
+\ls1\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 the reason for specializing the initial value for a summation.\
+\ls1\ilvl0\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 the reason for defining the class variable outside the class definition.\
+\pard\tx566\pardeftab720\sl360\partightenfactor0
+\cf2 \cb3 \strokec4 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb3 \strokec5 //\'a0Name:\'a0Minh\'a0To\cf2 \cb3 \strokec6 \
+\cf2 \cb3 \strokec5 //\'a0Seneca\'a0Student\'a0ID:\'a0125526186\cf2 \cb3 \strokec6 \
+\cf2 \cb3 \strokec5 //\'a0Seneca\'a0email:\'a0qto@myseneca.ca\'a0\'a0\'a0\'a0\cf2 \cb3 \strokec6 \
+\cf2 \cb3 \strokec5 //\'a0Date\'a0of\'a0completion:\'a025\'a0Sep\'a019\cf2 \cb3 \strokec6 \
+\cf2 \cb3 \strokec5 //\cf2 \cb3 \strokec6 \
+\cf2 \cb3 \strokec5 //\'a0I\'a0confirm\'a0that\'a0the\'a0content\'a0of\'a0this\'a0file\'a0is\'a0created\'a0by\'a0me,\cf2 \cb3 \strokec6 \
+\cf2 \cb3 \strokec5 //\'a0\'a0\'a0with\'a0the\'a0exception\'a0of\'a0the\'a0parts\'a0provided\'a0to\'a0me\'a0by\'a0my\'a0professor.\cf2 \cb3 \strokec6 \
+\pard\tx566\pardeftab720\sl360\partightenfactor0
+\cf2 \cb3 \strokec4 \
+\
+1) The reason you have to specialize the sum() member function is because you cannot perform arithmetic with strings as you would with numerical types\
+\
+2) You have to specialize the initial value for a summation because the initial value is dependent on the data type given to the template. With strings, the initial value should be \'93\'94, and for numbers, they should be 0.\
+\
+3) For static data members, they have to be defined outside of the class declaration because if not, they break the one definition rule. With static data members, they can only have one definition for that variable. The data member is shared by the objects, and can not have multiple copies of itself made for each object. This is why it has to be defined outside of the class. If it was defined inside the class, every time an object of that class is made, a new definition of that static data member would be made, which would break the rules of the static declaration.\
+}

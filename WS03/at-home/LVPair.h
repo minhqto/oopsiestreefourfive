@@ -33,7 +33,7 @@ namespace sdds
         const L& key() const
         {
             return keke;
-        }
+		}
         
         const V& value() const
         {
@@ -43,6 +43,7 @@ namespace sdds
         virtual void display(std::ostream& os) const
         {
             os << keke << " : " << val << std::endl;
+			
         }
     };
 
@@ -53,72 +54,75 @@ namespace sdds
         return os;
     }
 
+	//derived class
     template <class L, class V>
     class SummableLVPair : public LVPair<L, V>
     {
         static V initVal;
-        static size_t minFieldWidth; 
+		static size_t minFieldWidth;
 
         public:
         
         SummableLVPair(){}
 
-        static const V& getInitialValue()
+        SummableLVPair(const L& lbl, const V& valu) : LVPair<L, V>(lbl, valu)
         {
-            return initVal; //initVal must be static IOT to access it in a static member funciton
-        }
-
-        SummableLVPair(const L& lbl, const V& valu)
-        {
-            this->keke = lbl;
-            this->val = valu;
-
-            if(lbl.size() > minFieldWidth){
-                minFieldWidth = lbl.size();
-            }
-            else{
-                minFieldWidth = 0;
-            }
-        }
-
-        //specization for two strins
-        template<>
-        SummableLVPair<std::string>(std::string lbl, std::string valu)
-        {
-            initVal = "";
-            this->keke = lbl;
-            this->val = valu;
-
             if(lbl.size() > minFieldWidth){
                 minFieldWidth = lbl.size();
             }
         }
 
-        
-        SummableLVPair<std::string, int>(std::string lbl, int valu)
-        {
-            
-        }
+		static const V& getInitialValue()
+		{
+			return initVal; //initVal must be static IOT to access it in a static member funciton
+		}
 
         V sum(const L& lbl, const V& valu) const
         {
-            if(this->keke == lbl){
-                valu += this->val;
+			V tempVal;
+            if(this->key() == lbl){
+                tempVal = this->value() + valu;
             }
-            return valu;
+			else{
+				tempVal = valu;
+			}
+			return tempVal;
+            
         }
 
-        void display(std::ostream& os) const
+        virtual void display(std::ostream& os) const
         {
             os.setf(std::ios::left);
             os.width(minFieldWidth);
             //call display from parent class
-            LVPair::display(os);
-            os.setf(std::ios::right);
-        }
-
+            LVPair<L, V>::display(os);
+			os.unsetf(std::ios::left);
         
+        }
     };
+
+	template<>
+	std::string SummableLVPair<std::string, std::string>::initVal = "";
+
+	template<>
+	int SummableLVPair<std::string, int>::initVal = 0;
+
+	template<>
+	std::string SummableLVPair<std::string, std::string>::sum(const std::string& lbl, const std::string& valu) const
+	{
+		if (valu == "") {
+			return valu + this->value();
+		}
+		else {
+			return valu + ", " + this->value();
+		}
+		
+	}
+
+	//initialization of static data member minFieldWidth
+	template<class L, class V>
+	size_t SummableLVPair<L, V>::minFieldWidth = 0;
+
 }
 
 
