@@ -53,6 +53,7 @@ namespace sdds
             sub = src.substr(0, src.find(',') + 1);
             return sub;
         }
+        
         //1) takes full string and substring, removes substring from full string
         //2) check for spaces between comma and final letter in the substring
         //3) erases those spaces
