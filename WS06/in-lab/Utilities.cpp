@@ -28,12 +28,8 @@ namespace sdds
             
             if(in){
                 if(tempVeh[0] == 'C' || tempVeh[0] == 'c'){
-                    
-                    std::stringstream ss(tempVeh);
-                    
-                    Car newCar(ss);
-                    newCarPtr = &newCar;
-                    
+                    std::stringstream ss(tempVeh); 
+                    newCarPtr = new Car(ss);
                 }
             }
             return newCarPtr;

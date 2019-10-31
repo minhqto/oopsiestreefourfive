@@ -32,6 +32,12 @@ namespace sdds
 
         eraseStr(tempCar);
         carCondition = tempCar.substr(0, tempCar.find_first_of(','));
+        if(carCondition == "n"){
+            carCondition = "new";
+        }
+        else if(carCondition == "b"){
+            carCondition = "broken";
+        }
 
         eraseStr(tempCar);  
         top_speed = std::stoi(tempCar);
@@ -49,10 +55,21 @@ namespace sdds
     }
     void Car::display(std::ostream& out) const
     {
-        std::cout << "hello";
-        out << "|" << out.width(10) << this->maker;
-        out << " | " << out.width(6) << this->carCondition;
-        out << " | " << out.width(6) << out.precision(2) << this->top_speed << " |";
+        out << "|";
+        out.width(10);
+        out << this->maker;
+        out << " | ";
+        out.width(7); 
+        out.setf(std::ios::left);
+        out << this->carCondition;
+        out.unsetf(std::ios::left);
+        out << " | ";
+        out.width(6);
+        out.setf(std::ios::fixed);
+        out.precision(2);
+        out << this->top_speed << " |";
+        out.unsetf(std::ios::fixed);
+        out << std::endl;
     }
         
     void eraseStr(std::string& src)

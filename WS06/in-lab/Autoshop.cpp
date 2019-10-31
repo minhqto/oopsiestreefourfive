@@ -13,7 +13,7 @@ namespace sdds
     Autoshop& Autoshop::operator+=(Vehicle *theVehicle)
     {
         m_vehicles.push_back(theVehicle);
-        m_vehicles[0]->display(std::cout);
+       
         
         return *this;
     }
@@ -26,7 +26,7 @@ namespace sdds
         std::vector<Vehicle*>::const_iterator iter;
        
         for(iter = m_vehicles.cbegin(); iter != m_vehicles.cend(); iter++){
-            //(*iter)->display(out);
+            (*iter)->display(out);
             //out << *(*iter) << std::endl;
         }
         out << "--------------------------------" << std::endl;
