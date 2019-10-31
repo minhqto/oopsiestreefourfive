@@ -33,6 +33,7 @@ namespace sdds{
        
         Restaurant::Restaurant(Restaurant&& src)
         {
+            this->res = nullptr;
             *this = std::move(src);
         }
         Restaurant& Restaurant::operator=(const Restaurant& src)

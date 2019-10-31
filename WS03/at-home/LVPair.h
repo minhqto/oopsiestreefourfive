@@ -71,7 +71,7 @@ namespace sdds
                 minFieldWidth = lbl.size();
             }
         }
-
+        
 		static const V& getInitialValue()
 		{
 			return initVal; //initVal must be static IOT to access it in a static member funciton
@@ -100,7 +100,11 @@ namespace sdds
         
         }
     };
+    template<class L, class V>
+    void doSomething(LVPair<L, V>)
+    {
 
+    }
 	template<>
 	std::string SummableLVPair<std::string, std::string>::initVal = "";
 

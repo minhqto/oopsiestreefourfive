@@ -26,6 +26,7 @@ namespace sdds
 
     ConfirmationSender::ConfirmationSender(ConfirmationSender&& src)
     {
+        
         *this = std::move(src);
     }
 

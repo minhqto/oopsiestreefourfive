@@ -1,0 +1,38 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl340\sa280\partightenfactor0
+
+\f0\b\fs28 \cf2 \expnd0\expndtw0\kerning0
+//\'a0Workshop\'a05\'a0-\'a0Functions\'a0and\'a0Error\'a0Handling\
+//\'a02019/10\'a0-\'a0Cornel\
+\uc0\u8232 \
+//\'a0Name:\'a0Minh\'a0To\
+//\'a0Seneca\'a0Student\'a0ID:\'a0125526186\
+//\'a0Seneca\'a0email:\'a0qto@myseneca.ca\
+//\'a0Date\'a0of\'a0completion:\'a09\'a0Oct\'a019\
+//\
+//\'a0I\'a0confirm\'a0that\'a0the\'a0content\'a0of\'a0this\'a0file\'a0is\'a0created\'a0by\'a0me,\
+//\'a0\'a0\'a0with\'a0the\'a0exception\'a0of\'a0the\'a0parts\'a0provided\'a0to\'a0me\'a0by\'a0my\'a0professor.\
+\uc0\u8232 \
+- the difference between the implementations/utilizations of a functor and a lambda expression.\'a0 When is appropriate to use each one?\
+\uc0\u8232 \
+A functor is a class that can work as a function. This is normally done by overloading the () operator for that class, and objects of that class will perform the overloaded function on it\'92s parameters. It is useful for when you want to use data members to keep track of the functor itself.\'a0\
+\uc0\u8232 \
+A lambda expression is useful for designs that use anonymous functions, and where you can quickly pass lambdas into a function pointer.\
+\uc0\u8232 \
+- the constructor for `SpellChecker` generates an exception in certain conditions.\'a0 How would you change your code to achieve the same result, but without exceptions (both on the constructor and on the client side)? Compare the two solutions.\
+\uc0\u8232 \
+For spellchecker, I could simply have the constructor return an empty object if the file does not exist, and check if the object is empty on the client side. If the object is empty, then simply display a message that the file does not exist.\
+\uc0\u8232 \
+- the classes `Movie` and `Book` contain almost identical logic in loading data from the file. How would you redesign the classes in order **not** to duplicate that logic?\
+\uc0\u8232 \
+I could make a make a function template which takes a Movie or Book type, and that consists of the same logic of loading that data.\'a0\
+\uc0\u8232 \
+- the classes `Movie` and `Book` are instantiated from the `main()` function using a custom constructor, but they also contain a default constructor.\'a0 Is the default constructor necessary? Could you remove it? Justify your answer.\
+\uc0\u8232 \
+The default constructor is needed when you make an array of objects of type Movie or Book. You cannot remove it. Also, you may need it whenever an empty object is made.\
+}

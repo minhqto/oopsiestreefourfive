@@ -1,0 +1,42 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red88\green137\blue67;
+\red203\green203\blue202;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c99985;\cssrgb\c41481\c59899\c33082;
+\cssrgb\c83320\c83320\c83112;\cssrgb\c0\c1\c1;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 //\'a0Workshop\'a05\'a0-\'a0Functions\'a0and\'a0Error\'a0Handling\cf2 \cb3 \strokec5 \
+\cf2 \cb3 \strokec4 //\'a02019/10\'a0-\'a0Cornel\cf2 \cb3 \strokec5 \
+\
+\cf2 \cb3 \strokec4 //\'a0Name:\'a0Minh\'a0To\cf2 \cb3 \strokec5 \
+\cf2 \cb3 \strokec4 //\'a0Seneca\'a0Student\'a0ID:\'a0125526186\cf2 \cb3 \strokec5 \
+\cf2 \cb3 \strokec4 //\'a0Seneca\'a0email:\'a0qto@myseneca.ca\cf2 \cb3 \strokec5 \
+\cf2 \cb3 \strokec4 //\'a0Date\'a0of\'a0completion:\'a09\'a0Oct\'a019\cf2 \cb3 \strokec5 \
+\cf2 \cb3 \strokec4 //\cf2 \cb3 \strokec5 \
+\cf2 \cb3 \strokec4 //\'a0I\'a0confirm\'a0that\'a0the\'a0content\'a0of\'a0this\'a0file\'a0is\'a0created\'a0by\'a0me,\cf2 \cb3 \strokec5 \
+\cf2 \cb3 \strokec4 //\'a0\'a0\'a0with\'a0the\'a0exception\'a0of\'a0the\'a0parts\'a0provided\'a0to\'a0me\'a0by\'a0my\'a0professor.\cf2 \cb3 \strokec5 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs20 \cf6 \cb3 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 \
+- the difference between the implementations/utilizations of a functor and a lambda expression.  When is appropriate to use each one?\
+\
+A functor is a class that can work as a function. This is normally done by overloading the () operator for that class, and objects of that class will perform the overloaded function on it\'92s parameters. It is useful for when you want to use data members to keep track of the functor itself. \
+\
+A lambda expression is useful for designs that use anonymous functions, and where you can quickly pass lambdas into a function pointer.\
+\
+- the constructor for `SpellChecker` generates an exception in certain conditions.  How would you change your code to achieve the same result, but without exceptions (both on the constructor and on the client side)? Compare the two solutions.\
+\
+For spellchecker, I could simply have the constructor return an empty object if the file does not exist, and check if the object is empty on the client side. If the object is empty, then simply display a message that the file does not exist.\
+\
+- the classes `Movie` and `Book` contain almost identical logic in loading data from the file. How would you redesign the classes in order **not** to duplicate that logic?\
+\
+I could make a make a function template which takes a Movie or Book type, and that consists of the same logic of loading that data. \
+\
+- the classes `Movie` and `Book` are instantiated from the `main()` function using a custom constructor, but they also contain a default constructor.  Is the default constructor necessary? Could you remove it? Justify your answer.\
+\
+The default constructor is needed when you make an array of objects of type Movie or Book. You cannot remove it. Also, you may need it whenever an empty object is made.\
+}
