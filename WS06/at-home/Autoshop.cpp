@@ -13,8 +13,6 @@ namespace sdds
     Autoshop& Autoshop::operator+=(Vehicle *theVehicle)
     {
         m_vehicles.push_back(theVehicle);
-       
-        
         return *this;
     }
 
@@ -27,8 +25,18 @@ namespace sdds
         std::vector<Vehicle*>::const_iterator iter;
         for(iter = m_vehicles.cbegin(); iter != m_vehicles.cend(); iter++){
             (*iter)->display(out);
+            out << std::endl;
         }
         out << "--------------------------------" << std::endl;
 
+    }
+    Autoshop::~Autoshop()
+    {
+        //destructor for a vector type. 
+        
+        for(auto i : m_vehicles){
+            delete i;
+        }
+        m_vehicles.clear();
     }
 }

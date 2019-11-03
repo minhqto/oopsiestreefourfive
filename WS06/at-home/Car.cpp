@@ -20,27 +20,47 @@ namespace sdds
     { 
         std::string tempCar;
         std::getline(src, tempCar); 
-       
         //need to erase spaces
         while(tempCar.find(' ') != std::string::npos){
-           // size_t indexer = tempCar.find(' ');
-            tempCar.erase(tempCar.find(' '), 1);
+            size_t indexer = tempCar.find(' ');
+            tempCar.erase(indexer, 1);
         }
         
         eraseStr(tempCar);
         maker = tempCar.substr(0, tempCar.find_first_of(','));
-
+        //c,176
+        
         eraseStr(tempCar);
         carCondition = tempCar.substr(0, tempCar.find_first_of(','));
-        if(carCondition == "n"){
+        if(carCondition == ""){
+            carCondition = "new";
+        }
+        else if(carCondition == "n"){
             carCondition = "new";
         }
         else if(carCondition == "b"){
             carCondition = "broken";
         }
+        else if(carCondition == "u"){
+            carCondition = "used";
+        }
+        else{
+            throw "Invalid record! 3";
+        }
+        
+        /*the token representing the condition of the car is a different character than `n`, `u`, or `b`:
+        - generate an exception to inform the client that this record is invalid*/
 
-        eraseStr(tempCar);  
-        top_speed = std::stoi(tempCar);
+        //top speed
+        //246, 0.2
+        eraseStr(tempCar);
+        if(tempCar.find_first_of(',') != std::string::npos){
+                top_speed = std::stoi(tempCar.substr(0, tempCar.find_first_of(',')));
+        }
+        else{
+            eraseStr(tempCar); 
+                top_speed = std::stoi(tempCar);
+        }   
         
 
     }
@@ -61,15 +81,14 @@ namespace sdds
         out << " | ";
         out.width(6); 
         out.setf(std::ios::left);
-        out << this->carCondition;
+        out << this->condition();
         out.unsetf(std::ios::left);
         out << " | ";
         out.width(6);
         out.setf(std::ios::fixed);
         out.precision(2);
-        out << this->top_speed << " |";
+        out << this->topSpeed() << " |";
         out.unsetf(std::ios::fixed);
-        out << std::endl;
     }
         
     void eraseStr(std::string& src)
