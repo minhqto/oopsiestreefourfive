@@ -1,0 +1,26 @@
+// Name: Minh To
+// Seneca Student ID: 125526186
+// Seneca email: qto@myseneca.ca
+// Date of completion: 7 Nov 19
+//
+// I confirm that the content of this file is created by me,
+//   with the exception of the parts provided to me by my professor.
+
+
+- list all the STL functions that you have used in this workshop; explain your reasoning for choosing each one, and not another.
+
+1) std::for_each: for_each made it simple to loop through the STl container and apply a function to every single object in the container. It allowed me to not have to work with dereferencing the iterator
+
+2) std::any_of: this was useful for checking if any songs of an artist existed. As long as any of the objects in the container caused the lambda to return true, the any_of algorithm also returned true
+
+3) std::sort: this one was very useful for sorting the songs and working with sorting with strings.
+
+
+- present the advantages of using STL algorithms vs. implementing the functionality by yourself using loops.
+
+Working with the STL algorithms is advantageous because they are optimized for working with containers. The process of having to work with dereferenced iterators is eliminated when working with the algorithms, and I did not have to worry about going out of range.
+
+
+- the function that sorts the collection of songs receives as a parameter the field name to use; this can create errors if the client specifies an invalid field (or misspells it). How would you redesign that function to prevent the client to specify an invalid string, allowing any error to be detected by the compiler?
+
+I would implement a try catch block and have the compiler through an exception if there is an invalid field. It would then handle the exception gracefully.

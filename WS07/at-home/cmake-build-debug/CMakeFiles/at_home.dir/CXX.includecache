@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/WS07/at-home/SongCollection.cpp
+SongCollection.h
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/WS07/at-home/SongCollection.h
+
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/WS07/at-home/SongCollection.h
+iostream
+-
+string
+-
+fstream
+-
+exception
+-
+algorithm
+-
+vector
+-
+iomanip
+-
+list
+-
+
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/WS07/at-home/w7_home.cpp
+iostream
+-
+iomanip
+-
+string
+-
+list
+-
+SongCollection.h
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/WS07/at-home/SongCollection.h
+SongCollection.h
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/WS07/at-home/SongCollection.h
+

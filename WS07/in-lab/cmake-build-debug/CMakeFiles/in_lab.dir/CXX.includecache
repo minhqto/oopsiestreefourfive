@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/WS07/in-lab/SongCollection.cpp
+SongCollection.h
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/WS07/in-lab/SongCollection.h
+
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/WS07/in-lab/SongCollection.h
+iostream
+-
+string
+-
+fstream
+-
+exception
+-
+algorithm
+-
+vector
+-
+iomanip
+-
+
