@@ -1,0 +1,25 @@
+// Name: Minh To
+// Seneca Student ID: 125526186
+// Seneca email: qto@myseneca.ca
+// Date of completion: 18 Nov 19
+//
+// I confirm that the content of this file is created by me,
+//   with the exception of the parts provided to me by my professor.
+
+Quiz Reflection
+
+Explain the dangers of a unique smart pointer going out of scope?
+
+There are no dangers of a unique smart pointers going out of scope.
+
+
+- the advantage that smart pointer syntax provides. Use example from your code to support your explanation.
+
+ This was a simple example, but I did not have to manage the deletion of the memory allocation for the smart pointer. In mergeRaw, I had to delete the temporary pointer used, after it was passed to the += operator by value. 
+
+
+- the difference between raw and smart pointer syntax in your solution.
+
+Raw pointer syntax has the user needing to assign the raw pointer to the dynamically created objects, whereas the smart pointer syntax creates a smart pointer object and initializes it by using a constructor syntax.
+
+Also, smart pointers do not require you to manually delete dynamically allocated memory!
