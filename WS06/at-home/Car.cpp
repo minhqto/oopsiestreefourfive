@@ -18,9 +18,13 @@ namespace sdds
     }
     Car::Car(std::istream& src)
     { 
+		size_t countUpperChars = 0;
+		size_t posnOfUpperChar;
         std::string tempCar;
         std::getline(src, tempCar); 
-        //need to erase spaces
+        //need to erase 
+		//c,Alfa Romeo, n, 176
+        
         while(tempCar.find(' ') != std::string::npos){
             size_t indexer = tempCar.find(' ');
             tempCar.erase(indexer, 1);
@@ -28,7 +32,16 @@ namespace sdds
         
         eraseStr(tempCar);
         maker = tempCar.substr(0, tempCar.find_first_of(','));
-        //c,176
+		for (size_t i = 0; i < maker.length(); i++) {
+			if (isupper(maker[i])) {
+				countUpperChars++;
+				posnOfUpperChar = i;
+			}
+		}
+		if (countUpperChars > 1) {
+			maker.insert(posnOfUpperChar, " ");
+		}
+
         
         eraseStr(tempCar);
         carCondition = tempCar.substr(0, tempCar.find_first_of(','));
@@ -45,24 +58,18 @@ namespace sdds
             carCondition = "used";
         }
         else{
-            throw "Invalid record! 3";
+            throw "Invalid record!";
         }
-        
-        /*the token representing the condition of the car is a different character than `n`, `u`, or `b`:
-        - generate an exception to inform the client that this record is invalid*/
-
-        //top speed
-        //246, 0.2
+  
         eraseStr(tempCar);
         if(tempCar.find_first_of(',') != std::string::npos){
-                top_speed = std::stoi(tempCar.substr(0, tempCar.find_first_of(',')));
+            top_speed = std::stoi(tempCar.substr(0, tempCar.find_first_of(',')));
         }
         else{
             eraseStr(tempCar); 
-                top_speed = std::stoi(tempCar);
+            top_speed = std::stoi(tempCar);
         }   
-        
-
+	
     }
     std::string Car::condition() const
     {

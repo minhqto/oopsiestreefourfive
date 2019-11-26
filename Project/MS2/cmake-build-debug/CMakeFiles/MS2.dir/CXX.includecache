@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS2/CustomerOrder.cpp
+CustomerOrder.h
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS2/CustomerOrder.h
+
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS2/CustomerOrder.h
+iostream
+-
+string
+-
+Item.h
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS2/Item.h
+Utilities.h
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS2/Utilities.h
+
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS2/Item.h
+iostream
+-
+string
+-
+Utilities.h
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS2/Utilities.h
+
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS2/Utilities.h
+iostream
+-
+string
+-
+sstream
+-
+

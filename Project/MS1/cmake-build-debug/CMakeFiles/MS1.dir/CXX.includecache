@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS1/Item.cpp
+Item.h
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS1/Item.h
+Utilities.h
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS1/Utilities.h
+
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS1/Item.h
+iostream
+-
+string
+-
+Utilities.h
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS1/Utilities.h
+
+/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS1/Utilities.h
+iostream
+-
+string
+-
+sstream
+-
+

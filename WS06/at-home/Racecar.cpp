@@ -21,7 +21,7 @@ namespace sdds
         in.seekg(std::ios::beg);
         std::getline(in, tempBoost);
 
-        while(tempBoost.find(' ') != std::string::npos)
+       while(tempBoost.find(' ') != std::string::npos)
         {
             tempBoost.erase(tempBoost.find(' '), 1);
         }

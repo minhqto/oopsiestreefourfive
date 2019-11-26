@@ -1,0 +1,30 @@
+// Name: Minh To
+// Seneca Student ID: 125526186
+// Seneca email: qto@myseneca.ca
+// Date of completion: 31 Oct 19
+//
+// I confirm that the content of this file is created by me,
+//   with the exception of the parts provided to me by my professor.
+
+- Why do you need to deallocate the dynamically allocated memory in your vector?
+
+The vector holds pointers to different types of Vehicle types. These objects are dynamically created, and therefore they need to be destroyed properly via the use of the destructor.
+
+
+- When building an object from the input file, different things can go wrong: the record represents an unknown type of vehicle, or record contains invalid data. How can the function `loadData()` detect what went wrong? Can you think at another solution than the one you have implemented?
+
+The loadData function can detect what is wrong via the use of try/catch blocks in order to catch exceptions. You can throw exceptions within blocks of code like the += operator or createInstance function, and then expect the type of exception that can be thrown, and implement a catch block for it. Covering your bases with different catch blocks expecting different types of exceptions will allow you to see what went wrong without your program crashing.
+
+I could implement the try and catch blocks in the += operator and createInstance function themselves, and prevent the client from seeing the try and catch block in main.
+
+
+
+- In this workshop you had to use `std::list<sdds::Vehicle*>` and `std::vector<sdds::Vehicle*>` to store a collection of vehicles as pointers. Could you have used `std::list<sdds::Vehicle>` and `std::vector<sdds::Vehicle>` instead? **Justify your answer!**
+
+You could have, but then you would not be able to leverage runtime polymorphism within your code. If you wanted to make a Vehicle object, then you'd have to make the Vehicle interface a real base class instead of an interface, so instances of a Vehicle could be made. 
+
+You also would not be able to assign dynamically created car and racecar objects to the Vehicle array. They have to be objects, not pointers. 
+
+Quiz Reflection
+
+If I wanted to check for a successful connection to the file I want to write to, I should use is_open().

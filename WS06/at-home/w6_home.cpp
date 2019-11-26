@@ -28,11 +28,16 @@ void loadData(const char* filename, sdds::Autoshop& as)
 			sdds::Vehicle* aVehicle = sdds::createInstance(file);
 			if (aVehicle)
 				as += aVehicle;
-		}catch(const char* msg){
+		}
+		catch(const char* msg){
 			std::cout << msg << std::endl;
-		}catch(const std::invalid_argument& msg){
-            std::cout << "Invalid record!" << std::endl;
-        }
+		}
+		catch(std::invalid_argument& msg){
+            std::cout << "Invalid record!"  << std::endl;
+		}
+		catch (const std::string msg) {
+			std::cout << msg << std::endl;
+		}
 	}	
 }
 
@@ -60,6 +65,7 @@ int main(int argc, char** argv)
 		auto fastVehicles = [](const sdds::Vehicle* veh){
 			return veh->topSpeed() > 300 ?  true : false;
 			};
+
 		as.select(fastVehicles, vehicles);
 		std::cout << "--------------------------------\n";
 		std::cout << "|       Fast Vehicles          |\n";
@@ -80,6 +86,7 @@ int main(int argc, char** argv)
 		auto brokenVehicles = [](const sdds::Vehicle* veh){
 			return veh->condition() == "broken" ? true : false;
 			};
+			
 		as.select(brokenVehicles, vehicles);
 		std::cout << "--------------------------------\n";
 		std::cout << "| Vehicles in need of repair   |\n";

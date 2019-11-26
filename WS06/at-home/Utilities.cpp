@@ -25,8 +25,15 @@ namespace sdds
         do{
             Car* newCarPtr = nullptr;
             std::string tempVeh;
+	
             std::getline(in, tempVeh);
-            
+
+			while (tempVeh.find(' ') != std::string::npos) {
+				tempVeh.erase(tempVeh.find(' '), 1);
+			}
+			
+			std::stringstream tempStream(tempVeh);
+		
             if(in){
                     if(tempVeh[0] == 'C' || tempVeh[0] == 'c'){
                         std::stringstream ss(tempVeh); 
