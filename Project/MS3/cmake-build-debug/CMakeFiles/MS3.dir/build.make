@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3
+CMAKE_SOURCE_DIR = /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MS3.dir/depend.make
@@ -59,81 +59,81 @@ include CMakeFiles/MS3.dir/flags.make
 
 CMakeFiles/MS3.dir/CustomerOrder.cpp.o: CMakeFiles/MS3.dir/flags.make
 CMakeFiles/MS3.dir/CustomerOrder.cpp.o: ../CustomerOrder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MS3.dir/CustomerOrder.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MS3.dir/CustomerOrder.cpp.o -c /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/CustomerOrder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MS3.dir/CustomerOrder.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MS3.dir/CustomerOrder.cpp.o -c /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/CustomerOrder.cpp
 
 CMakeFiles/MS3.dir/CustomerOrder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MS3.dir/CustomerOrder.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/CustomerOrder.cpp > CMakeFiles/MS3.dir/CustomerOrder.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/CustomerOrder.cpp > CMakeFiles/MS3.dir/CustomerOrder.cpp.i
 
 CMakeFiles/MS3.dir/CustomerOrder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MS3.dir/CustomerOrder.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/CustomerOrder.cpp -o CMakeFiles/MS3.dir/CustomerOrder.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/CustomerOrder.cpp -o CMakeFiles/MS3.dir/CustomerOrder.cpp.s
 
 CMakeFiles/MS3.dir/Item.cpp.o: CMakeFiles/MS3.dir/flags.make
 CMakeFiles/MS3.dir/Item.cpp.o: ../Item.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MS3.dir/Item.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MS3.dir/Item.cpp.o -c /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/Item.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MS3.dir/Item.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MS3.dir/Item.cpp.o -c /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/Item.cpp
 
 CMakeFiles/MS3.dir/Item.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MS3.dir/Item.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/Item.cpp > CMakeFiles/MS3.dir/Item.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/Item.cpp > CMakeFiles/MS3.dir/Item.cpp.i
 
 CMakeFiles/MS3.dir/Item.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MS3.dir/Item.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/Item.cpp -o CMakeFiles/MS3.dir/Item.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/Item.cpp -o CMakeFiles/MS3.dir/Item.cpp.s
 
 CMakeFiles/MS3.dir/ms3.cpp.o: CMakeFiles/MS3.dir/flags.make
 CMakeFiles/MS3.dir/ms3.cpp.o: ../ms3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MS3.dir/ms3.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MS3.dir/ms3.cpp.o -c /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/ms3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MS3.dir/ms3.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MS3.dir/ms3.cpp.o -c /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/ms3.cpp
 
 CMakeFiles/MS3.dir/ms3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MS3.dir/ms3.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/ms3.cpp > CMakeFiles/MS3.dir/ms3.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/ms3.cpp > CMakeFiles/MS3.dir/ms3.cpp.i
 
 CMakeFiles/MS3.dir/ms3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MS3.dir/ms3.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/ms3.cpp -o CMakeFiles/MS3.dir/ms3.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/ms3.cpp -o CMakeFiles/MS3.dir/ms3.cpp.s
 
 CMakeFiles/MS3.dir/Utilities.cpp.o: CMakeFiles/MS3.dir/flags.make
 CMakeFiles/MS3.dir/Utilities.cpp.o: ../Utilities.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MS3.dir/Utilities.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MS3.dir/Utilities.cpp.o -c /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/Utilities.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MS3.dir/Utilities.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MS3.dir/Utilities.cpp.o -c /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/Utilities.cpp
 
 CMakeFiles/MS3.dir/Utilities.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MS3.dir/Utilities.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/Utilities.cpp > CMakeFiles/MS3.dir/Utilities.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/Utilities.cpp > CMakeFiles/MS3.dir/Utilities.cpp.i
 
 CMakeFiles/MS3.dir/Utilities.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MS3.dir/Utilities.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/Utilities.cpp -o CMakeFiles/MS3.dir/Utilities.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/Utilities.cpp -o CMakeFiles/MS3.dir/Utilities.cpp.s
 
 CMakeFiles/MS3.dir/Task.cpp.o: CMakeFiles/MS3.dir/flags.make
 CMakeFiles/MS3.dir/Task.cpp.o: ../Task.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MS3.dir/Task.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MS3.dir/Task.cpp.o -c /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/Task.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MS3.dir/Task.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MS3.dir/Task.cpp.o -c /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/Task.cpp
 
 CMakeFiles/MS3.dir/Task.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MS3.dir/Task.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/Task.cpp > CMakeFiles/MS3.dir/Task.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/Task.cpp > CMakeFiles/MS3.dir/Task.cpp.i
 
 CMakeFiles/MS3.dir/Task.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MS3.dir/Task.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/Task.cpp -o CMakeFiles/MS3.dir/Task.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/Task.cpp -o CMakeFiles/MS3.dir/Task.cpp.s
 
 CMakeFiles/MS3.dir/LineManager.cpp.o: CMakeFiles/MS3.dir/flags.make
 CMakeFiles/MS3.dir/LineManager.cpp.o: ../LineManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MS3.dir/LineManager.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MS3.dir/LineManager.cpp.o -c /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/LineManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MS3.dir/LineManager.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MS3.dir/LineManager.cpp.o -c /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/LineManager.cpp
 
 CMakeFiles/MS3.dir/LineManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MS3.dir/LineManager.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/LineManager.cpp > CMakeFiles/MS3.dir/LineManager.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/LineManager.cpp > CMakeFiles/MS3.dir/LineManager.cpp.i
 
 CMakeFiles/MS3.dir/LineManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MS3.dir/LineManager.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/LineManager.cpp -o CMakeFiles/MS3.dir/LineManager.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/LineManager.cpp -o CMakeFiles/MS3.dir/LineManager.cpp.s
 
 # Object files for target MS3
 MS3_OBJECTS = \
@@ -155,7 +155,7 @@ MS3: CMakeFiles/MS3.dir/Task.cpp.o
 MS3: CMakeFiles/MS3.dir/LineManager.cpp.o
 MS3: CMakeFiles/MS3.dir/build.make
 MS3: CMakeFiles/MS3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable MS3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable MS3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MS3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -168,6 +168,6 @@ CMakeFiles/MS3.dir/clean:
 .PHONY : CMakeFiles/MS3.dir/clean
 
 CMakeFiles/MS3.dir/depend:
-	cd /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3 /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3 /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/cmake-build-debug /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/cmake-build-debug /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/cmake-build-debug/CMakeFiles/MS3.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3 /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3 /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/cmake-build-debug /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/cmake-build-debug /Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/cmake-build-debug/CMakeFiles/MS3.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/MS3.dir/depend
 

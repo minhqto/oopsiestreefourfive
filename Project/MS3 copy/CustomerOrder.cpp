@@ -1,11 +1,6 @@
-// Name: Minh To
-// Seneca Student ID: 125526186
-// Seneca email: qto@myseneca.ca
-// Date of completion: 1 Dec 19
 //
-// I confirm that the content of this file is created by me,
-//   with the exception of the parts provided to me by my professor.
-
+// Created by Minh To on 2019-11-18.
+//
 #include "CustomerOrder.h"
 
 size_t CustomerOrder::m_widthField = 0;
@@ -94,22 +89,13 @@ CustomerOrder::~CustomerOrder()
 
 bool CustomerOrder::getItemFillState(std::string src) const
 {
-    bool filled = true;
-    for(size_t i = 0; i < m_cntItem; i++){
-        if(m_lstItem[i]->m_itemName == src){
-            filled = m_lstItem[i]->m_fillState;
-            break;
-        }
-    }
-    return filled;
-
-    /*bool filled = false;
+    bool filled = false;
     for(size_t i = 0; i < m_cntItem; i++){
         if(m_lstItem[i]->m_itemName == src && m_lstItem[i]->m_fillState == true){
             filled = true;
         }
     }
-    return filled;*/
+    return filled;
 }
 
 
@@ -123,6 +109,7 @@ bool CustomerOrder::getOrderFillState() const
         }
     }
     if(tempCntItems == m_cntItem){
+
         isFilled = true;
     }
 

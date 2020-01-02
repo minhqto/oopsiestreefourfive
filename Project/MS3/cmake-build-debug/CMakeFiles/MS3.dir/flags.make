@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sd
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Project/MS3/. 
+CXX_INCLUDES = -I/Users/minhto/Documents/Seneca/ThirdSemester/OOP345/Workshops/Project/MS3/. 
 

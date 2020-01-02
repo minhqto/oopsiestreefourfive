@@ -4,6 +4,7 @@
 
 #include "Task.h"
 
+
 /*
    * - a custom constructor -- upon instantiation, a `Task` object receives a reference to an u
    * nmodifiable `std::string`.  This string contains a single record (one line) that has been retrieved from
@@ -29,12 +30,12 @@ Task::Task(const std::string& src) : Item(src)
 
     void Task::runProcess(std::ostream& os)
     {
-        if(!m_orders.empty()){
-            if(!m_orders.back().getItemFillState(this->getName())){
-                m_orders.back().fillItem(*this, os);
-            }
+    if(!m_orders.empty()){
+        if(!m_orders.back().getItemFillState(this->getName())){
+            m_orders.back().fillItem(*this, os);
         }
     }
+}
 /*
    - `bool moveTask()` – moves the last `CustomerOrder` in the queue to the next task on the assembly line
    if the orders fill state for the current `Item` is true.  Otherwise, the `CustomerOrder` should remain
@@ -48,9 +49,8 @@ bool Task::moveTask()
         if(this->m_orders.back().getItemFillState(this->getName()) && m_pNextTask != nullptr){
             *m_pNextTask += std::move(m_orders.back());
             m_orders.pop_back();
-            isMoved = true;
         }
-
+        isMoved = true;
     }
     return isMoved;
 }

@@ -28,7 +28,6 @@ LineManager::LineManager(const std::string& src, std::vector<Task*>& task_vec, s
     m_cntCustomerOrder = cust_vec.size();
     std::string task1;
     std::string task2;
-
     //takes in the file
     do {
         std::getline(file, tempLine);
@@ -50,7 +49,6 @@ LineManager::LineManager(const std::string& src, std::vector<Task*>& task_vec, s
 
     std::vector<Task*>::iterator it;
     for(it = task_vec.begin(); it != task_vec.end(); it++){
-
         this->AssemblyLine.push_back(*it);
     }
 
